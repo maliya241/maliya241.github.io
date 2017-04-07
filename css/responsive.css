@@ -1,34 +1,62 @@
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 769px) {
+  .projecttext {
+    margin-left: -15px;
+  }
   
-  #mobilelogo {
-    display: none;
+  .resume {
+    margin-bottom: 1em;
   }
 
-  #logo {
-    display: initial;
-    min-width: 90%;
+}
+
+@media screen and (min-width: 769px) {
+  .skills {
     position: relative;
-    z-index: 1;
+    right: -2em;
   }
   
-  nav li a {
-    display: inline-block;
+  a {
+    font-size: 1.5em;
+  }
+  
+  .d-block {
+    padding-bottom: 4em;
+  }
+  
+  .carousel-caption {
+    margin-bottom: -1.75em;
+    color: #333f3e;
+  }
+  
+  .threeline {
+    padding-bottom: 5em; 
+  }
+  
+  .threelines {
+    margin-bottom: -2em;
+  }
+  
+  .artwork {
+    padding-bottom: 1rem;
+  }
+  
+  #Mei {
+    height: 10em;
+    width: auto;
+    position: relative;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  #tableone {
+    float: left;
+    width: 49%;
+  }
+  #tabletwo {
     float: right;
-    position: relative;
-    z-index: 2;
-    top: 6em;
-    right: 6.5em;
-    margin-right: 2em;
+    width: 49%;
+    margin-top: -0.5em;
   }
 }
 
-@media screen and (min-width: 990px) {
-  nav li a {
-    position: relative;
-    z-index: 2;
-    top: 4.5em;
-    right: 5em;
-    margin-right: 2em;
-  }
-
-}
