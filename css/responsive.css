@@ -1,62 +1,45 @@
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 47%;
+      margin: 1% 1%;
+    }
+}
+
 @media screen and (max-width: 769px) {
   .projecttext {
     margin-left: -15px;
-  }
-  
-  .resume {
-    margin-bottom: 1em;
   }
 
 }
 
 @media screen and (min-width: 769px) {
-  .skills {
-    position: relative;
-    right: -2em;
-  }
-  
-  a {
-    font-size: 1.5em;
-  }
-  
-  .d-block {
-    padding-bottom: 4em;
-  }
-  
-  .carousel-caption {
-    margin-bottom: -1.75em;
-    color: #333f3e;
-  }
-  
-  .threeline {
-    padding-bottom: 5em; 
-  }
-  
-  .threelines {
-    margin-bottom: -2em;
-  }
-  
-  .artwork {
-    padding-bottom: 1rem;
-  }
-  
-  #Mei {
-    height: 10em;
-    width: auto;
-    position: relative;
-  }
+    .skills .tr {
+        width: 50%;
+    }
+    
+    #logo {
+        width: 50%;
+        padding: 0 25%;
+    }
+    #logoText {
+        font-size: 3.5em;
+    }
 
 }
 
-@media screen and (min-width: 1200px) {
-  #tableone {
-    float: left;
-    width: 49%;
-  }
-  #tabletwo {
-    float: right;
-    width: 49%;
-    margin-top: -0.5em;
-  }
+@media screen and (min-width: 1400px) {
+    .skills .tr {
+        width: 25%;
+    }
+    #logoText {
+        font-size: 5em;
+    }
+ 
 }
 
