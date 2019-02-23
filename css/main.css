@@ -20,7 +20,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    margin-top: 2em;
+    padding-top: 2em;
     margin-bottom: 1em;
 }
 
@@ -62,9 +62,17 @@ img {
   margin: 0;
 }
 
+.sectionDescription {
+  color: #0bb789;
+}
+
 /*******************************
 Header
 *******************************/
+#hello {
+  padding-top: 1em;
+}
+
 #logoText {
   font-size: 3.5em;
   width: 100%;
@@ -73,14 +81,11 @@ Header
 }
 
 /*******************************
-Table
+Skills
 *******************************/
 .table {
   width: 100%;
   margin-left: 1.5%;
-}
-.skills .tr:last-child {
-  margin-bottom: 2em;
 }
 
 .skills .tr p {
@@ -120,9 +125,22 @@ div.gallery img {
   width: 23%;
 }
 .clearfix:after {
-content: "";
-display: table;
-clear: both;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 45%;
+      margin: 1% 1%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
 }
 
 
