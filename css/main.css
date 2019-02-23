@@ -22,6 +22,7 @@ h2 {
     font-size: 2em;
     padding-top: 2em;
     margin-bottom: 1em;
+    margin-top: 0;
 }
 
 h3 {
@@ -63,7 +64,7 @@ img {
 }
 
 .sectionDescription {
-  color: #0bb789;
+  color: #333f3e;
 }
 
 /*******************************
