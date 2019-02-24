@@ -4,7 +4,7 @@ General
 body {
     font-family: 'Mandali', sans-serif;
     color: #333f3e;
-    margin: 5% 10% 25% 10%;
+    margin: 5% 10% 5% 10%;
     background-color: #ffffff;
 }
 
@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .notlive {
@@ -56,6 +56,8 @@ li {
 img {
   max-width: 100%;
   height: auto;
+  border: 5px solid #333f3e;
+  border-radius: 5px;
 }
 
 .subsection {
@@ -67,11 +69,25 @@ img {
   color: #333f3e;
 }
 
+footer {
+  display: inline;
+  clear: both;
+}
+
+footer p {
+  text-align: center;
+  clear: both;
+}
+
 /*******************************
 Header
 *******************************/
 #hello {
   padding-top: 1em;
+}
+
+#logo {
+  border: 0;
 }
 
 #logoText {
@@ -119,7 +135,21 @@ Projects
 div.gallery img {
   width: 100%;
   height: auto;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
 }
+
+.gallery {
+  background-image: url(../img/viewMore.png); 
+  background-size: 100%;
+  opacity: 1;
+}
+
+.gallery:hover img {
+  opacity: 0.1;
+}
+
 .responsive {
   margin: 0 1%;
   float: left;
@@ -133,14 +163,18 @@ div.gallery img {
 
 @media only screen and (max-width: 700px) {
     .responsive {
-      width: 45%;
-      margin: 1% 1%;
+      width: 46%;
+      margin: 1% 2%;
+    }
+    .responsive:nth-child(3) {
+      clear: left;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .responsive {
       width: 100%;
+      clear: both;
     }
 }
 
@@ -151,6 +185,9 @@ Social Icons
 #social {
   position: relative;
   font-size: 1em;
+  display: block;
+  clear: both;
+  padding: 75px;
 }
 
 #social li {
@@ -160,11 +197,9 @@ Social Icons
   position: absolute;
   left: 0;
   background-image: url('../img/socialsprite.png');
-}
-
-#social li {
   width: 43px;
-  display: block;
+  display: inline-block;
+  clear: both;
 }
 
 #emailtext, #phonetext, #linkedintext {
@@ -208,8 +243,6 @@ Projects
 .projectpic {
   width:100%;
   height: auto;
-  border: 5px solid #333f3e;
-  border-radius: 5px;
   padding: 0;
 }
 
@@ -219,6 +252,7 @@ Projects
 
 .projecttext p {
   margin: 0;
+  word-break: break-word;
 }
 
 .projecttext h3 {
@@ -227,11 +261,5 @@ Projects
 
 .projecttext {
   margin-bottom: 3em;
-}
-
-.projectsrow {
-  margin-left: 0.188em;
-  padding-bottom: 0.5em;
-  padding-right: 15px;
-  padding-right: 15px;
+  padding-left: 3%;
 }
