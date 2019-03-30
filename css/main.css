@@ -240,6 +240,11 @@ Social Icons
 /*******************************
 Projects
 *******************************/
+
+#websites {
+  padding-top: 0em;
+}
+
 .projectpic {
   width:100%;
   height: auto;
